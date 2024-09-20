@@ -1,3 +1,16 @@
 ### GET request with a header
 GET http://localhost:8080/hello
-Authorization: Bearer Ich bins
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+
+### GET request with a header
+GET http://localhost:8080/hello
+Authorization: Basic c2FpZDp2YWxvcmFudA==
+
+### Send POST request with json body
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "username": "Max",
+  "password": "123456"
+}
